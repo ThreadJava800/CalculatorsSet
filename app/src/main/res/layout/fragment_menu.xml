@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuFragment">
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="@string/rome_numbers"
+        app:iconGravity="end"
+        app:icon="@drawable/ic_baseline_arrow_forward_ios_24"
+        android:theme="@style/Theme.MyApp"
+        android:id="@+id/to_rome_num"
+        app:navGraph = "@navigation/fragment_nav"
+        android:padding="16dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
