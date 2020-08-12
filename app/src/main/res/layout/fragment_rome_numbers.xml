@@ -15,7 +15,7 @@
         android:theme="@style/Theme.MyApp"
         app:layout_constraintTop_toTopOf="parent">
 
-        <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+        <com.google.android.material.textfield.MaterialAutoCompleteTextView
             android:id="@+id/rome_num_textView_upper"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -39,9 +39,9 @@
         tools:layout_editor_absoluteX="16dp">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextUpper"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/editTextUpper"/>
+            android:layout_height="wrap_content" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -52,12 +52,10 @@
         android:padding="16dp"
         android:src="@drawable/ic_baseline_compare_arrows_24"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout2"
-        tools:layout_editor_absoluteX="28dp"
-        />
+        tools:layout_editor_absoluteX="28dp" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout3"
-        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="16dp"
@@ -65,7 +63,7 @@
         app:layout_constraintTop_toBottomOf="@+id/shapeableImageView2"
         tools:layout_editor_absoluteX="0dp">
 
-        <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+        <com.google.android.material.textview.MaterialTextView
             android:id="@+id/rome_number_textView_downer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -73,6 +71,9 @@
             android:inputType="none"
             android:singleLine="true"
             android:text="@string/arab_numbers"
+            android:textSize="20sp"
+            android:textStyle="normal"
+            android:textColor="@color/black"
             android:theme="@style/Theme.MyApp" />
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -87,10 +88,10 @@
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout3">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextDowner"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:singleLine="true"
-            android:id="@+id/editTextDowner"/>
+            android:singleLine="true" />
 
     </com.google.android.material.textfield.TextInputLayout>
 

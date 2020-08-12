@@ -1,7 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">CalculatorsTry2</string>
+    <string name="back">Back</string>
     <string name="next">Next</string>
     <string name="rome_numbers">Rome numbers</string>
     <string name="arab_numbers">Arab numbers</string>
-    <string name="back">Back</string>
 </resources>

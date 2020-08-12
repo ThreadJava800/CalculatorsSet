@@ -24,5 +24,6 @@ public class MainActivity extends AppCompatActivity {
      * which is packaged with this application.
      */
     public static native long romeToArab(String rome_num);
+    public static native String arabToRome(String arab_num);
     public native void init();
 }
